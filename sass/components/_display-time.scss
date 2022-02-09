@@ -1,0 +1,20 @@
+// Display Time
+.display-time {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.4rem;
+
+  &__time {
+    margin-left: 0.5rem;
+    background-color: $color-accent-2;
+    border-radius: 0.3rem;
+    color: $color-grey-light;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+}

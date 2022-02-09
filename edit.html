@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Now Playing</title>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg" href="img/favico.svg" />
+  </head>
+  <body>
+    <!--Main-->
+    <main class="main main__2-col">
+      <div class="navbar">
+        <figure class="navbar__logo-container">
+          <img
+            src="img/navbar_logo.svg"
+            alt="Now Playing"
+            class="navbar__logo"
+          />
+        </figure>
+
+        <!--Navigation-->
+        <div class="nav">
+          <a class="nav__link" href="#">
+            <i class="fas fa-home nav__icon"></i>
+          </a>
+
+          <a class="nav__link nav__link--active" href="#">
+            <i class="fas fa-edit nav__icon"></i>
+          </a>
+
+          <a class="nav__link" href="#">
+            <i class="fas fa-cog nav__icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--Section Start-->
+      <section class="section section__edit">
+        <h2 class="heading-secondary">Edit Overlay</h2>
+
+        <!--Slider-->
+        <div class="swiper slider">
+          <!--Slides-->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slider__slide">
+              <div class="display-time">
+                Display time
+                <span class="display-time__time"
+                  ><i class="far fa-clock display-time__icon"></i>30 sec</span
+                >
+              </div>
+
+              <div class="lowerthird">
+                <h4 class="lowerthird__label">Now Playing</h4>
+                <h3 class="lowerthird__song">False Alarm</h3>
+                <h2 class="lowerthird__author">The Weekend</h2>
+              </div>
+            </div>
+            <div class="swiper-slide slider__slide"></div>
+            <div class="swiper-slide slider__slide"></div>
+          </div>
+
+          <!--Next/Prev-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!--Pagination-->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!--Edit-->
+        <div class="edit-container">
+          <!--Now Playing-->
+          <div class="card">
+            <div class="card__header">
+              <h4 class="card__title">Now Playing</h4>
+            </div>
+            <div class="card__item">
+              <span class="card__item-text">Background Color</span>
+
+              <div class="color-picker">
+                <label for="colorPicker-background">
+                  <input
+                    type="color"
+                    value="#ffffff"
+                    id="colorPicker-background"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="card__item">
+              <span class="card__item-text">Text Color</span>
+
+              <div class="color-picker">
+                <label for="colorPicker-text">
+                  <input type="color" value="#ffffff" id="colorPicker-text" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!--Edit Title-->
+          <div class="card">
+            <div class="card__header">
+              <h4 class="card__title">Title</h4>
+            </div>
+            <div class="card__item">
+              <span class="card__item-text">Font Style</span>
+
+              <div>
+                <select class="select-dropdown">
+                  <option value="1">Arial</option>
+                  <option value="2">Roboto</option>
+                  <option value="3">Open Sans</option>
+                </select>
+
+                <input
+                  type="text"
+                  id="fontSize"
+                  name="Font Size"
+                  size="4"
+                  placeholder="12px"
+                  value="12px"
+                />
+              </div>
+            </div>
+
+            <div class="card__item">
+              <span class="card__item-text">Decoration</span>
+
+              <div class="card__box">
+                <button class="btn btn--secondary btn--secondary-active">
+                  <i class="fas fa-bold"></i>
+                </button>
+                <button class="btn btn--secondary">
+                  <i class="fas fa-underline"></i>
+                </button>
+                <button class="btn btn--secondary">
+                  <i class="fas fa-italic"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card__item">
+              <span class="card__item-text">Lettercase</span>
+
+              <div class="card__box">
+                <button class="btn btn--secondary btn--secondary-active">
+                  -
+                </button>
+                <button class="btn btn--secondary">AG</button>
+                <button class="btn btn--secondary">ag</button>
+                <button class="btn btn--secondary">Ag</button>
+              </div>
+            </div>
+
+            <div class="card__item">
+              <span class="card__item-text">Text Color</span>
+
+              <div class="color-picker">
+                <label for="colorPicker-title">
+                  <input type="color" value="#ffffff" id="colorPicker-title" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!--Edit Artist-->
+          <div class="card">
+            <div class="card__header">
+              <h4 class="card__title">Artist</h4>
+            </div>
+            <div class="card__item">
+              <span class="card__item-text">Font Style</span>
+
+              <div>
+                <select class="select-dropdown">
+                  <option value="1">Arial</option>
+                  <option value="2">Roboto</option>
+                  <option value="3">Open Sans</option>
+                </select>
+
+                <input
+                  type="text"
+                  id="fontSize"
+                  name="Font Size"
+                  size="4"
+                  placeholder="12px"
+                  value="12px"
+                />
+              </div>
+            </div>
+
+            <div class="card__item">
+              <span class="card__item-text">Decoration</span>
+
+              <div class="card__box">
+                <button class="btn btn--secondary btn--secondary-active">
+                  <i class="fas fa-bold"></i>
+                </button>
+                <button class="btn btn--secondary">
+                  <i class="fas fa-underline"></i>
+                </button>
+                <button class="btn btn--secondary">
+                  <i class="fas fa-italic"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card__item">
+              <span class="card__item-text">Lettercase</span>
+
+              <div class="card__box">
+                <button class="btn btn--secondary btn--secondary-active">
+                  -
+                </button>
+                <button class="btn btn--secondary">AG</button>
+                <button class="btn btn--secondary">ag</button>
+                <button class="btn btn--secondary">Ag</button>
+              </div>
+            </div>
+
+            <div class="card__item">
+              <span class="card__item-text">Text Color</span>
+
+              <div class="color-picker">
+                <label for="colorPicker-artist">
+                  <input type="color" value="#ffffff" id="colorPicker-artist" />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/colorPicker.js"></script>
+  </body>
+</html>

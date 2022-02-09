@@ -1,0 +1,29 @@
+.lowerthird {
+  position: absolute;
+  left: 2.5rem;
+  bottom: 2.5rem;
+
+  &__label {
+    background-color: #ef4444;
+    text-transform: uppercase;
+    color: $color-grey-light;
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  &__song {
+    font-weight: 400;
+    font-size: 3rem;
+    color: $color-grey-light;
+  }
+
+  &__author {
+    color: $color-accent;
+    font-weight: 400;
+    font-size: $default-font-size !important;
+  }
+}

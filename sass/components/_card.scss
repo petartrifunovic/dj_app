@@ -1,0 +1,58 @@
+.card {
+  padding: 2rem;
+  background-color: $color-secondary-2;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $color-grey-light;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    padding: 0 0 1rem 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      border-bottom: 2px solid $color-primary-1;
+      width: 3rem;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__item-text {
+    color: $color-accent;
+  }
+
+  &__item-feature {
+    color: $color-grey-light;
+
+    &--blue {
+      color: $color-primary-1;
+    }
+  }
+
+  &__box {
+    display: flex;
+
+    .btn--secondary {
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

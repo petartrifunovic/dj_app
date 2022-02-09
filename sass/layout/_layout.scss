@@ -1,0 +1,92 @@
+.main {
+  width: 102.4rem;
+  height: 76.8rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-1, 0.9),
+      rgba($color-secondary-1, 0.9)
+    ),
+    url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+  transition: 0.3s ease;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    box-shadow: $box-shadow-dark;
+  }
+
+  &__2-col {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 3rem;
+  }
+}
+
+.section {
+  &__autodetect-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    .paragraph {
+      max-width: 40rem;
+    }
+  }
+
+  &__dj-software-selection-screen {
+    padding: 6rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+
+    .default-link {
+      position: absolute;
+      top: 3rem;
+    }
+  }
+
+  &__main-screen {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 10rem;
+    grid-row-gap: 3rem;
+    align-content: baseline;
+
+    .heading-secondary {
+      height: 6rem;
+      grid-column: 1 / span 2;
+      border-bottom: 1px solid $color-secondary-2;
+    }
+  }
+
+  &__settings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-content: baseline;
+  }
+
+  .heading-secondary {
+    height: 6rem;
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid $color-secondary-2;
+  }
+}

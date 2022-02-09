@@ -1,0 +1,38 @@
+.selection-software {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+  &__img-box {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-light;
+    margin-bottom: 1rem;
+    box-shadow: $box-shadow;
+    transition: 0.2s ease;
+
+    &:hover {
+      box-shadow: $box-shadow-dark;
+      transform: translateY(-0.3rem);
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey-light;
+    transition: 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Now Playing</title>
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg" href="img/favico.svg" />
+  </head>
+  <body>
+    <!--Main-->
+    <main class="main main__2-col">
+      <div class="navbar">
+        <figure class="navbar__logo-container">
+          <img
+            src="img/navbar_logo.svg"
+            alt="Now Playing"
+            class="navbar__logo"
+          />
+        </figure>
+
+        <!--Navigation-->
+        <div class="nav">
+          <a class="nav__link" href="#">
+            <i class="fas fa-home nav__icon"></i>
+          </a>
+
+          <a class="nav__link" href="#">
+            <i class="fas fa-edit nav__icon"></i>
+          </a>
+
+          <a class="nav__link nav__link--active" href="#">
+            <i class="fas fa-cog nav__icon"></i>
+          </a>
+        </div>
+      </div>
+      <!--Section Start-->
+      <section class="section section__settings">
+        <h2 class="heading-secondary">Settings</h2>
+
+        <!--Tracklist Settings-->
+        <div class="card">
+          <div class="card__header">
+            <h4 class="card__title">Tracklist Settings</h4>
+          </div>
+          <div class="card__item">
+            <span class="card__item-text">Save Tracklists</span>
+            <input class="btn-toggle" type="checkbox" />
+          </div>
+
+          <div class="card__item">
+            <span class="card__item-text">Tracklist Folder</span>
+            <span class="card__item-feature">C:\Ussers\Chris</span>
+          </div>
+
+          <div class="card__item">
+            <span class="card__item-text">Track Filename Format</span>
+            <span class="card__item-feature card__item-feature--blue"
+              >2022-01-16.txt</span
+            >
+          </div>
+
+          <div class="card__item">
+            <span class="card__item-text">Track Format</span>
+            <span class="card__item-feature">The Weekend - False Alarm</span>
+          </div>
+        </div>
+
+        <!--Twitch Settings-->
+        <div class="card">
+          <div class="card__header">
+            <h4 class="card__title">Twitch Settings</h4>
+            <a class="btn btn--primary" href="#">login</a>
+          </div>
+          <div class="card__item">
+            <span class="card__item-text">Track ID Command</span>
+            <span class="card__item-feature">C:\Ussers\Chris</span>
+          </div>
+
+          <div class="card__item">
+            <span class="card__item-text">Track ID Format</span>
+            <span class="card__item-feature">The Weekend - False Alarm</span>
+          </div>
+        </div>
+
+        <!--Discord Settings-->
+        <div class="card">
+          <div class="card__header">
+            <h4 class="card__title">Discord Settings</h4>
+          </div>
+          <div class="card__item">
+            <span class="card__item-text">Save Tracklists</span>
+          </div>
+
+          <div class="card__item">
+            <span class="card__item-text">Tracklist Folder</span>
+            <span class="card__item-feature">C:\Ussers\Chris</span>
+          </div>
+
+          <div class="card__item">
+            <span class="card__item-text">Track Filename Format</span>
+            <span class="card__item-feature card__item-feature--blue"
+              >2022-01-16.txt</span
+            >
+          </div>
+
+          <div class="card__item">
+            <span class="card__item-text">Track Format</span>
+            <span class="card__item-feature">The Weekend - False Alarm</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

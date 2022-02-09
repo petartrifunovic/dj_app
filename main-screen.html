@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Now Playing</title>
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg" href="img/favico.svg" />
+  </head>
+  <body>
+    <!--Main-->
+    <main class="main main__2-col">
+      <div class="navbar">
+        <figure class="navbar__logo-container">
+          <img
+            src="img/navbar_logo.svg"
+            alt="Now Playing"
+            class="navbar__logo"
+          />
+        </figure>
+
+        <!--Navigation-->
+        <div class="nav">
+          <a class="nav__link nav__link--active" href="#">
+            <i class="fas fa-home nav__icon"></i>
+          </a>
+
+          <a class="nav__link" href="#">
+            <i class="fas fa-edit nav__icon"></i>
+          </a>
+
+          <a class="nav__link" href="#">
+            <i class="fas fa-cog nav__icon"></i>
+          </a>
+        </div>
+      </div>
+      <!--Section Start-->
+      <section class="section section__main-screen">
+        <h2 class="heading-secondary">Home Page</h2>
+
+        <!--Playing Now-->
+        <div class="now-playing">
+          <div class="now-playing__header">
+            <h3 class="heading-tertiary">Playing Now</h3>
+            <a class="default-link" href="#">
+              <i class="fas fa-sync-alt default-link__icon"></i>Update
+            </a>
+          </div>
+          <div class="now-playing__main">
+            <div class="now-playing__bottom-box">
+              <div class="now-playing__author">
+                <h3 class="now-playing__song">False Alarm</h3>
+                <h2 class="now-playing__name">The Weekend</h2>
+              </div>
+
+              <button class="now-playing__btn">
+                <i class="fas fa-play-circle"></i>
+              </button>
+            </div>
+
+            <img class="now-playing__img" src="img/img_1.png" alt="Song" />
+          </div>
+          <div class="now-playing__bottom">
+            <div>
+              <h4 class="now-playing__bottom-title">DJ Application</h4>
+              <span class="now-playing__bottom-text">Rekordbox</span>
+            </div>
+
+            <div>
+              <h4 class="now-playing__bottom-title">Streaming PC</h4>
+              <span class="now-playing__bottom-text">192.168.60.33</span>
+            </div>
+
+            <div>
+              <h4 class="now-playing__bottom-title" id="copy-url">
+                Overlay URL <i class="fas fa-link"></i>
+              </h4>
+              <span class="now-playing__bottom-text" id="copy-text"
+                >http://localhost:9000</span
+              ><span class="now-playing__copied-text">Copied</span>
+            </div>
+          </div>
+        </div>
+
+        <!--Playlist-->
+        <div class="playlist">
+          <div class="playlist__header">
+            <h3 class="heading-tertiary">Playlist</h3>
+            <a class="default-link" href="#">
+              <i class="fas fa-download default-link__icon"></i>Save Playlist
+            </a>
+          </div>
+
+          <div class="playlist__main">
+            <div class="playlist__item">
+              <img src="img/img_1.png" alt="Song" class="playlist__img" />
+
+              <div>
+                <h3 class="playlist__song">
+                  <a class="playlist__link" href="#">False Alarm</a>
+                </h3>
+                <h2 class="playlist__name">The Weekend</h2>
+                <p class="playlist__date">
+                  <span class="playlist__date--month">Jan</span>
+                  <span class="playlist__date--date">23</span>,
+                  <span class="playlist__date--year">2022</span>.
+                  <span class="playlist__date--time">16:00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="playlist__item">
+              <img src="img/img_1.png" alt="Song" class="playlist__img" />
+
+              <div>
+                <h3 class="playlist__song">
+                  <a class="playlist__link" href="#">False Alarm</a>
+                </h3>
+                <h2 class="playlist__name">The Weekend</h2>
+                <p class="playlist__date">
+                  <span class="playlist__date--month">Jan</span>
+                  <span class="playlist__date--date">23</span>,
+                  <span class="playlist__date--year">2022</span>.
+                  <span class="playlist__date--time">16:00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="playlist__item">
+              <img src="img/img_1.png" alt="Song" class="playlist__img" />
+
+              <div>
+                <h3 class="playlist__song">
+                  <a class="playlist__link" href="#">False Alarm</a>
+                </h3>
+                <h2 class="playlist__name">The Weekend</h2>
+                <p class="playlist__date">
+                  <span class="playlist__date--month">Jan</span>
+                  <span class="playlist__date--date">23</span>,
+                  <span class="playlist__date--year">2022</span>.
+                  <span class="playlist__date--time">16:00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="playlist__item">
+              <img src="img/img_1.png" alt="Song" class="playlist__img" />
+
+              <div>
+                <h3 class="playlist__song">
+                  <a class="playlist__link" href="#">False Alarm</a>
+                </h3>
+                <h2 class="playlist__name">The Weekend</h2>
+                <p class="playlist__date">
+                  <span class="playlist__date--month">Jan</span>
+                  <span class="playlist__date--date">23</span>,
+                  <span class="playlist__date--year">2022</span>.
+                  <span class="playlist__date--time">16:00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="playlist__item">
+              <img src="img/img_1.png" alt="Song" class="playlist__img" />
+
+              <div>
+                <h3 class="playlist__song">
+                  <a class="playlist__link" href="#">False Alarm</a>
+                </h3>
+                <h2 class="playlist__name">The Weekend</h2>
+                <p class="playlist__date">
+                  <span class="playlist__date--month">Jan</span>
+                  <span class="playlist__date--date">23</span>,
+                  <span class="playlist__date--year">2022</span>.
+                  <span class="playlist__date--time">16:00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="playlist__item">
+              <img src="img/img_1.png" alt="Song" class="playlist__img" />
+
+              <div>
+                <h3 class="playlist__song">
+                  <a class="playlist__link" href="#">False Alarm</a>
+                </h3>
+                <h2 class="playlist__name">The Weekend</h2>
+                <p class="playlist__date">
+                  <span class="playlist__date--month">Jan</span>
+                  <span class="playlist__date--date">23</span>,
+                  <span class="playlist__date--year">2022</span>.
+                  <span class="playlist__date--time">16:00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="playlist__item">
+              <img src="img/img_1.png" alt="Song" class="playlist__img" />
+
+              <div>
+                <h3 class="playlist__song">
+                  <a class="playlist__link" href="#">False Alarm</a>
+                </h3>
+                <h2 class="playlist__name">The Weekend</h2>
+                <p class="playlist__date">
+                  <span class="playlist__date--month">Jan</span>
+                  <span class="playlist__date--date">23</span>,
+                  <span class="playlist__date--year">2022</span>.
+                  <span class="playlist__date--time">16:00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/copyText.js"></script>
+  </body>
+</html>

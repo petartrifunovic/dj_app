@@ -1,0 +1,62 @@
+// Color Picker
+[type='color'] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+}
+
+[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+[type='color']::-webkit-color-swatch {
+  border: none;
+}
+
+.colorPicker {
+  display: flex;
+  align-items: center;
+}
+
+// Select
+.select-dropdown,
+.select-dropdown * {
+  margin: 0;
+  padding: 0 0.3rem;
+  height: 2.5rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.select-dropdown {
+  position: relative;
+  background-color: $color-accent-2;
+  color: $color-grey-light;
+  border-radius: 0.3rem;
+  border: none;
+  max-width: 10rem;
+}
+
+.select-dropdown:focus {
+  outline: none;
+}
+
+#fontSize {
+  position: relative;
+  background-color: $color-accent-2;
+  color: $color-grey-light;
+  border-radius: 0.3rem;
+  max-width: 3.8rem;
+  height: 2.5rem;
+  padding: 0 0.3rem;
+  border: none;
+  outline: none;
+}
+
+#fontSize:focus {
+  outline: none;
+}

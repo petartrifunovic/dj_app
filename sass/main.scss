@@ -1,0 +1,31 @@
+// Abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Base
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+// Components
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/composition';
+@import 'components/display-time';
+@import 'components/inputs';
+@import 'components/lowerthird';
+@import 'components/navigation';
+@import 'components/spinner';
+@import 'components/swiper';
+@import 'components/widget';
+
+// Layout
+@import 'layout/layout';
+
+// Pages
+@import 'pages/autodetect-screen';
+@import 'pages/dj-software-selection-screen';
+@import 'pages/edit';
+@import 'pages/main-screen';
+@import 'pages/settings';
